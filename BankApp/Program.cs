@@ -31,7 +31,7 @@ namespace BankApp
                         case 1:
                             BankAccount bankAccount = new BankAccount(2000);
                             
-                            for (; endtime >= DateTime.Now;)
+                            for (; endtime > DateTime.Now;)
                             {
                                 int choice = new Random().Next(2);
                                 double sum = new Random().Next(100);
@@ -49,7 +49,7 @@ namespace BankApp
                             break;
                         case 2:
                             BankAccountWithSyn bankAccountWithSyn = new BankAccountWithSyn(2000);
-                            for (; endtime >= DateTime.Now;)
+                            for (; endtime > DateTime.Now;)
                             {
                                 int choice = new Random().Next(2);
                                 double sum = new Random().Next(100);
